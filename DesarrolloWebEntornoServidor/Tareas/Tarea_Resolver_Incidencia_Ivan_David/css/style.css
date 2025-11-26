@@ -1,0 +1,386 @@
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 100ms all;
+
+    color: white;
+
+}
+
+*::selection {
+
+    background-color: white;
+
+    color: black;
+
+}
+
+body {
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-position: center center;
+
+    background-color: rgb(19, 19, 19);
+
+}
+
+header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    margin-bottom: 5%;
+
+    padding: 2%;
+
+    background-color: black;
+
+    border-bottom: 2px solid white;
+
+}
+
+header .logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    align-self: center;
+
+}
+
+header nav {
+
+    width: 30%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    align-self: center;
+
+}
+
+header nav ul {
+
+    width: 100%;
+
+    display: flex;
+
+    list-style-type: none;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+header nav ul:nth-child(2) {
+
+    width: 20%;
+
+    margin-left: 20%;
+
+}
+
+header nav ul:nth-child(2) li a:hover {
+
+    background-color: rgb(39, 39, 39);
+
+}
+
+header nav ul li {
+
+    width: 100%;
+
+}
+
+header nav ul li a {
+
+    width: 100%;
+
+    text-decoration-line: none;
+
+    color: white;
+
+    display: inline-block;
+
+    padding: 8%;
+
+    border: 2px solid white;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+}
+
+main article > section:nth-child(1) {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+main article > section:nth-child(1) .seccionPanel {
+
+    width: 80%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 2px solid rgb(255, 255, 255);
+
+    padding: 4%;
+
+    gap: 2rem;
+
+}
+
+main article > section:nth-child(1) .seccionPanel .row {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+}
+
+main article > section:nth-child(1) .seccionPanel .row .usuario {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 3%;
+
+    border: 2px solid rgb(255, 255, 255);
+
+    background-color: rgb(19, 19, 19);
+
+    gap: 1rem;
+
+}
+
+main article > section:nth-child(1) .seccionPanel .row .usuario button {
+    
+    display: block;
+
+    padding: 4%;
+
+    background-color: rgb(31, 31, 31);
+    
+    color: white;
+    
+    border: 2px solid rgb(255, 255, 255);
+    
+    border-radius: 5px;
+
+    cursor: pointer;
+    
+}
+
+/* Estilos del formulario */
+
+.cabeceraform {
+
+    margin-bottom: 2%;
+
+}
+
+main article > .seccionFormularioCrearCuenta {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont {
+
+    width: 30%;
+
+    display: flex;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 3px solid;
+
+    border-image: linear-gradient(to right, rgb(166, 87, 255), rgb(255, 124, 148))1;
+
+    border-radius: 8px;
+
+    padding: 10%;
+
+    gap: 1rem;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form .input-cont {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    align-self: center;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form .input-cont label {
+
+    width: 100%;
+
+    font-size: 1.0rem;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form .input-cont input {
+
+    width: 5%;
+
+    align-self: center;
+
+    appearance: none;
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+    
+    border-radius: 50%;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form .input-cont input:checked {
+
+    background-image: url("../img/Sign-check-icon.svg.png");   
+    
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form input {
+
+    width: 100%;
+
+    border: 2px solid white;
+
+    background-color: rgb(26, 26, 26);
+
+    padding: 4%;
+
+    border-radius: 12px;
+
+    outline: none;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form input::placeholder {
+
+    color: white;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form input[type="submit"] {
+
+    cursor: pointer;
+
+}
+
+main article > .seccionFormularioCrearCuenta .formcont form input[type="submit"]:hover {
+
+    background-color: rgb(20, 20, 20);
+
+}
+
+.form{
+    border: 2px solid;
+    border-image: linear-gradient(to right, rgb(166, 87, 255), rgb(255, 124, 148))1;
+    padding: 26px;
+    /* height:260px;
+    width: 200px; */
+    /* text-align: center; */
+}
+
+#name{
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#button{
+    background-color: black;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px;
+    color: white;
+    width:100%;
+    margin-top:3px;
+}
+
+.sesion{
+    text-align:center;
+    font-size:23px;
+}
+
+
+
+/* Fin de los estilos del formulario */

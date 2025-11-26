@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12</title>
+</head>
+<body>
+
+    <?php
+    
+        $password = "amogustercero";
+
+        if (strlen($password) >= 8) {
+
+            echo "Contraseña fuerte";
+
+        } else {
+
+            echo "Contraseña debil";
+
+        }
+    
+    ?>
+    
+</body>
+</html>

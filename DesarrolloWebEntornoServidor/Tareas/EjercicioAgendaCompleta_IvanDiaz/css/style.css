@@ -1,0 +1,135 @@
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 100ms all;
+
+}
+
+body {
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    background-color: rgb(20, 20, 20);
+
+    color: white;
+
+}
+
+header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 4%;
+
+}
+
+main article > section:nth-child(1) {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+main article > section:nth-child(1) .formcont {
+
+    width: 30%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+main article > section:nth-child(1) .formcont form {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    border: 3px solid white;
+
+    border-radius: 12px;
+
+    padding: 8%;
+    
+}
+
+main article > section:nth-child(1) .formcont form input {
+
+    width: 100%;
+
+    padding: 2%;
+
+    background-color: rgb(29, 29, 29);
+
+    border: 2px solid white;
+
+    color: white;
+
+    outline: none;
+
+}
+
+main article > section:nth-child(1) .formcont form input[type="submit"] {
+
+    padding: 4%;
+
+    cursor: pointer;
+
+}
+
+main article > section:nth-child(1) .formcont form input[type="submit"]:hover {
+
+    background-color: rgb(62, 62, 62);
+
+}
+
+main article > section:nth-child(1) .formcont form input::placeholder {
+
+    color: white;
+
+}
+
+main article > .seccionProcesarDatos:nth-child(1) {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+}
