@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script defer type="module" src="js/bootstrap.js"></script>
     <title>Proyecto login completo</title>
 </head>
 <body>
@@ -87,6 +88,40 @@
         </article>
 
     </main>
+
+    <footer class="bg-dark text-white py-5">
+
+    <div class="container">
+        <div class="row text-center text-md-start">
+
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <h5 class="mb-3">Sobre nosotros</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white text-decoration-none">¿Quiénes somos?</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Emprender con nosotros</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Entrar a nuestra comunidad</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <h5 class="mb-3">Oficinas globales</h5>
+                <ul class="list-unstyled">
+                    <li>New York, USA <small class="text-secondary">(North America HQ)</small></li>
+                    <li>Berlin, Germany <small class="text-secondary">(EMEA HQ)</small></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary my-4">
+
+        <div class="text-center small text-secondary">
+            © 2026 Proyecto Login Completo · Todos los derechos reservados
+        </div>
+    </div>
+
+</footer>
+
     
 </body>
 </html>
