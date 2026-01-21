@@ -1,0 +1,387 @@
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    transition: 100ms all;
+
+}
+
+*::selection {
+
+    background-color: rgb(0, 82, 98);;
+
+}
+
+header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-around;
+
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(11, 11, 11));
+
+    padding: 1.2%;
+
+}
+
+header .logo {
+
+    align-self: center;
+
+}
+
+header .logo h1 {
+
+    color: transparent;
+
+    background-clip: text;
+
+    background-image: linear-gradient(to right, rgb(229, 65, 0), rgb(255, 225, 0));
+
+}
+
+header nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    align-self: center;
+
+}
+
+header nav ul {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    list-style-type: none;
+
+    gap: 1rem;
+
+    width: 100%;
+
+}
+
+header nav ul li {
+
+    display: block;
+
+    width: 100%;
+
+}
+
+header nav ul li a {
+
+    width: 100%;
+
+    display: block;
+
+    color: white;
+
+    text-decoration-line: none;
+
+    padding-bottom: 4%;
+
+    font-size: 1.1rem;
+
+}
+
+header nav ul li a:hover {
+
+    border-bottom: 1px solid white;
+
+}
+
+main article > section:nth-child(1) {
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgb(47, 47, 47);
+
+    padding: 2%;
+
+}
+
+main article > section:nth-child(1) .container {
+
+    width: 40%;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+main article > section:nth-child(1) .container h1 {
+
+    color: white;
+
+}
+
+main article > section:nth-child(1) .container p {
+
+    color: white;
+
+}
+
+main article > section:nth-child(2) {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: black;
+
+    padding: 2%;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont {
+
+    width: 72%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 6%;
+
+    border: 2px solid white;
+
+    gap: 1rem;
+
+    border-radius: 12px;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta h1 {
+
+    color: white;
+
+    font-size: 1.0rem;
+
+    text-align: center;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta p {
+
+    color: white;
+
+    text-align: center;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta button {
+
+    width: 100%;
+
+    display: block;
+
+    padding: 9%;
+
+    background-color: black;
+
+    border: 2px solid white;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta button:hover {
+
+    background-color: rgb(44, 44, 44);
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta figure {
+
+    width: 100%;
+
+}
+
+main article > section:nth-child(2) .tarjetas-cont .tarjeta figure img {
+
+    width: 100%;
+
+}
+
+footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 2%;
+
+    background-color: rgb(28, 28, 28);
+
+}
+
+footer .container {
+
+    display: flex;
+
+}
+
+footer .container h1 {
+
+    color: white
+    
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) {
+
+    display: flex;
+
+    background-color: rgb(17, 17, 17);
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont {
+
+    width: 40%;
+
+    display: flex;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 1rem;
+
+    padding: 8%;
+
+    border: 3px solid white;
+
+    border-radius: 12px;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form h1 {
+
+    color: white;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form .termscondscont {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: left;
+    
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form .termscondscont label {
+
+    color: white;
+
+    align-self: center;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form .termscondscont input {
+
+    width: 10%;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form input {
+
+    width: 100%;
+
+    padding: 3%;
+
+    background-color: rgb(24, 24, 24);
+
+    border: 2px solid white;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    color: white;
+
+    font-size: 1rem;
+
+    align-self: center;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form input[type="submit"] {
+
+    cursor: pointer;
+
+} 
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form input[type="submit"]:hover {
+
+    background-color: black;
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form input:focus {
+
+    background-color: rgb(54, 54, 54);
+
+}
+
+main article > .seccionFormularioCrearCuenta:nth-child(1) .formcont form input::placeholder {
+
+    color: white;
+
+}

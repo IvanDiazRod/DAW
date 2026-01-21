@@ -1,0 +1,47 @@
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+
+    display: flex;
+
+    margin-bottom: 3%;
+
+}
+
+main article > section:nth-child(1) {
+
+    display: flex;
+
+}
+
+main article > section:nth-child(1) .contenedor-tabla-multiplicar {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+main article > section:nth-child(1) .columna {
+
+    flex-direction: column;
+
+}
+
+main article > section:nth-child(1) .columna-reversa {
+
+    flex-direction: column-reverse;
+    
+}
