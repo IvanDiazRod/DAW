@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <script defer type="module" src="src/js/main.js"></script>
+    <script defer type="module" src="src/js/menu.js"></script>
+    <script defer src="src/js/cards.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>project</title>
+</head>
+<body class="selection:bg-orange-700 text-white">
+
+      <header class="bg-gray-800">
+  
+      <div class="max-w-7xl mx-auto flex items-center justify-between p-6">
+
+        <h1 class="text-2xl md:text-4xl font-bold text-white">Coaching Services</h1>
+
+        <nav id="mobile-menu" aria-label="Main navigation" class="hidden md:block relative md:static top-full left-0 md:bg-transparent bg-gray-800">
+      
+          <ul class="flex flex-col md:flex-row items-center gap-6 p-6 md:p-0">
+
+            <li><a href="index.html" class="group relative text-white text-lg transition hover:text-blue-400">Home<span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span></a></li>
+
+            <li><a href="aboutUs.html" class="group relative text-white text-lg transition hover:text-blue-400">About<span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span></a></li>
+
+            <li><a href="services.html" class="group relative text-white text-lg transition hover:text-blue-400">Services<span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"> </span> </a> </li>
+
+            <li><a href="http://127.0.0.1:5500/index.html#testimonials" class="group relative text-white text-lg transition hover:text-blue-400">Testimonials<span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span></a></li>
+
+            <li><a href="#footer" class="group relative text-white text-lg transition hover:text-blue-400"> Contact <span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"> </span> </a> </li>
+
+            <li><a href="register.html" class="inline-block text-white bg-orange-600 px-4 py-2 rounded-xl shadow-lg transition hover:bg-orange-700">Get started</a></li>
+
+            <li id="greeting"><a href="#" class="group relative text-white text-lg transition hover:text-blue-400"><span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span></a></li>
+      
+          </ul>
+    
+        </nav>
+
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Open menu">☰</button>
+
+      </div>
+
+    </header>
+
+<main>
+
+  <article>
+
+<section class="flex flex-col items-center justify-center bg-gray-900 py-16 gap-8">
+
+  <div class="flex flex-col items-center gap-3 p-6 w-full max-w-xl bg-linear-to-r from-gray-800 to-gray-950 rounded-xl">
+
+    <h2 class="text-4xl text-white font-semibold">Get your <span class="text-orange-500">instant quote</span></h2>
+
+    <div class="w-full h-px bg-gray-600"></div>
+    
+    <p class="text-gray-300 text-center">Select your services and enter details to calculate your price</p>
+  
+  </div>
+
+  <form class="flex flex-col gap-4 w-full max-w-xl bg-gray-900 p-6 rounded-2xl border border-gray-700">
+
+    <div class="flex flex-col gap-3 bg-gray-800 p-4 rounded-xl">
+      
+      <label class="flex items-center gap-2 text-white font-semibold">
+        
+        <input id="personalCoaching" type="checkbox" class="accent-orange-500">
+        
+        Personal coaching
+      
+      </label>
+
+      <div id="personalHoursWrapper" class="hidden">
+        
+        <span class="text-gray-300 text-sm">Hours needed</span>
+        
+        <input id="personalHours" type="number" placeholder="0" class="w-24 bg-gray-900 border border-gray-600 rounded-lg p-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+
+      </div>
+    
+    </div>
+
+    <div class="flex flex-col gap-3 bg-gray-800 p-4 rounded-xl">
+      
+      <label class="flex items-center gap-2 text-white font-semibold">
+        
+        <input type="checkbox" id="chkLeadership" class="accent-orange-500">
+        
+        Leadership learning
+      
+      </label>
+
+      <select id="leadershipProgram" class="bg-gray-900 border border-gray-600 rounded-lg p-2 text-white hidden focus:ring-2 focus:ring-orange-500">
+        
+        <option disabled selected>Select program</option>
+  
+        <option value="basic">Basic</option>
+  
+        <option value="advanced">Advanced</option>
+      
+      </select>
+    
+    </div>
+
+    <div class="flex flex-col gap-3 bg-gray-800 p-4 rounded-xl">
+      
+      <label class="flex items-center gap-2 text-white font-semibold">
+        
+        <input type="checkbox" id="chkMotivation" class="accent-orange-500">
+        
+        Motivational speaking
+      
+      </label>
+
+      <select id="eventSize" class="bg-gray-900 border border-gray-600 rounded-lg p-2 text-white hidden focus:ring-2 focus:ring-orange-500">
+      
+        <option disabled selected>Choose event size</option>
+  
+        <option value="small">Small</option>
+  
+        <option value="medium">Medium</option>
+  
+        <option value="large">Large</option>
+      
+      </select>
+    
+    </div>
+
+    <div class="flex items-center justify-between bg-gray-950 p-4 rounded-xl">
+      
+      <span class="text-white text-xl font-semibold">Total</span>
+      
+      <span id="totalPrice" class="text-orange-500 text-2xl font-bold">0 $</span>
+    
+    </div>
+
+    <button type="submit" class="w-full bg-linear-to-r from-green-600 to-blue-500 p-4 rounded-xl text-xl font-semibold text-white hover:opacity-90 cursor-pointer transition">CALCULATE PRICE</button>
+
+  </form>
+
+</section>
+
+
+  </article>
+
+</main>
+
+  <footer id="footer" class="bg-linear-to-r from-gray-800 to-gray-950 text-gray-300">
+  
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <div class="grid gap-12 md:grid-cols-4">
+
+      <div>
+
+        <h5 class="text-white text-xl font-semibold mb-4">Quick links</h5>
+        
+        <ul class="flex flex-col gap-2">
+        
+          <li><a href="#" class="hover:text-white transition">Home</a></li>
+        
+          <li><a href="#" class="hover:text-white transition">About</a></li>
+        
+          <li><a href="#" class="hover:text-white transition">Services</a></li>
+        
+          <li><a href="#" class="hover:text-white transition">Contact</a></li>
+        
+        </ul>
+      
+      </div>
+
+      <div>
+        
+        <h5 class="text-white text-xl font-semibold mb-4">Resources</h5>
+        
+        <ul class="flex flex-col gap-2">
+          
+          <li><a href="#" class="hover:text-white transition">Blog</a></li>
+          
+          <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+          
+          <li><a href="#" class="hover:text-white transition">Session tips</a></li>
+        
+        </ul>
+      
+      </div>
+
+      <div>
+
+        <h5 class="text-white text-xl font-semibold mb-4">Follow us</h5>
+
+        <div class="flex gap-4">
+    
+          <a href="#" class="group"><div class="w-10 h-10 flex items-center justify-center hover:scale-110 transition"><img src="img/Facebook.png" alt="Facebook"class="w-full h-full object-contain"></div></a>
+
+          <a href="#" class="group"><div class="w-10 h-10 flex items-center justify-center hover:scale-110 transition"><img src="img/Twitter.svg" alt="Twitter" class="w-full h-full object-contain"></div></a>
+
+          <a href="#" class="group"> <div class="w-10 h-10 flex items-center justify-center hover:scale-110 transition"><img src="img/Linkedin.png" alt="LinkedIn" class="w-full h-full object-contain"></div></a>
+
+          <a href="#" class="group"><div class="w-10 h-10 flex items-center justify-center hover:scale-110 transition"><img src="img/Pinterest.png" alt="Pinterest" class="w-full h-full object-contain"></div></a>
+
+          <a href="#" class="group"> <div class="w-10 h-10 flex items-center justify-center hover:scale-110 transition"> <img src="img/Instagram.png" alt="Instagram" class="w-full h-full object-contain"> </div> </a>
+
+        </div>
+
+      </div>
+
+      <div>
+        
+        <h5 class="text-white text-xl font-semibold mb-4">Contact us</h5>
+        
+        <ul class="flex flex-col gap-3">
+          
+          <li class="flex items-center justify-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-300 group-hover:text-white transition"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg><a href="mailto:example@email.com" class="hover:text-white transition">example@email.com</a></li>
+          
+          <li class="flex items-center justify-start gap-2">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-300 group-hover:text-white transition">
+
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+
+            </svg>
+
+            <a href="tel:+34663884082" class="hover:text-white transition">  +34 663 88 40 82</a>
+          
+          </li>
+        
+        </ul>
+      
+      </div>
+
+    </div>
+
+    <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">© 2026 Coaching Services. All rights reserved.</div>
+
+    <div class="text-center text-sm text-gray-400">Iván Díaz Rodríguez</div>
+
+  </div>
+
+</footer>
+    
+</body>
+</html>
